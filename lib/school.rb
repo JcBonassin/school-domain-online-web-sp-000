@@ -15,4 +15,12 @@ def add_student (student_name, grades)
    roster[student_grade]
  end
 
+ def sort
+    sorted = {}
+    roster.each do |grade, students|
+      sorted[grade] = students.sort
+    end
+    sorted
+  end
+
 end
